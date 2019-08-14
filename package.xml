@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+    <name>Sweetapple_Adminlockdownbyip</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/OSL-3.0">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Enables store administrators to restrict access to the Magento Admin backend to one or more IP Addresses.</summary>
+    <description>&lt;p&gt;Easily restrict access to your Magento Administration backend just by adding a comma delimited list of IP addresses in &lt;strong&gt;System-&gt;Configration-&gt;Sweet-Apple-&gt;Admin IP Address Restriction&lt;/strong&gt;.&lt;/p&gt;&#xD;
+&#xD;
+&lt;p&gt;The restriction can be toggled on and off at will.&lt;/p&gt;&#xD;
+&#xD;
+Please note:&#xD;
+&lt;ol&gt;&#xD;
+&lt;li&gt;Use this extension with care if you do not have a static address on your internet connection.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;&#xD;
+&lt;li&gt;This extension overrides Mage_Admin_Model_Observer::actionPreDispatchAdmin method and hence should only be used with Magento 1.7.0, 1.7.1 and 1.7.2. It's easy to adapt for earlier versions should you wish by editing the corresponding Mage_Admin_Model_Observer for your installed Magento version.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;&#xD;
+&lt;li&gt;If you lock yourself out of the admin area by failing to add your own IP address, there are &lt;strong&gt;instructions and a reset script available &lt;a href="http://www.sweet-apple.co.uk/magento/extensions/adminiplockdown/ipaddresslockdownreset.zip"&gt;here&lt;/a&gt;&lt;/strong&gt; (or just delete the key 'sweetapple_admin_ip_lockdown/iplockdown/status' from the 'core_config_data' table.&lt;br /&gt;&lt;br /&gt;&lt;/li&gt;&#xD;
+&lt;li&gt;Still having trouble? &lt;strong&gt;Email &lt;a href="mailto:info@sweet-apple.co.uk"&gt;info@sweet-apple.co.uk&lt;/a&gt; for paid support.&lt;/strong&gt;&#xD;
+&lt;/li&gt;&#xD;
+&lt;/ol&gt;</description>
+    <notes>Supports Magento CE 1.7.0, 1.7.1 and 1.7.2.</notes>
+    <authors><author><name>Sweet-Apple</name><user>Sweet-Apple</user><email>info@sweet-apple.co.uk</email></author></authors>
+    <date>2013-03-09</date>
+    <time>15:02:38</time>
+    <contents><target name="magelocal"><dir name="Sweetapple"><dir name="Adminlockdownbyip"><dir name="Helper"><file name="Data.php" hash="d23d92dd02c8b7c470d2ae08b04d65b3"/></dir><dir name="Model"><dir name="Admin"><file name="Observer.php" hash="126b1777e237de3acebdd86a6c4270f4"/></dir></dir><dir name="etc"><file name="config.xml" hash="a50c1ebf4027b79d9bf03a38e237dc18"/><file name="system.xml" hash="9b1e6f69197ba1aa3371a2ad9159d695"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Sweetapple_Adminlockdownbyip.xml" hash="ca2a62042354fc4b0f2fbbb156534beb"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

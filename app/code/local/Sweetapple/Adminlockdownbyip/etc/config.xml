@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Sweetapple_Adminlockdownbyip
+ *
+ * This module was developed by Sweet-Apple.  If you require any
+ * support or have any questions please contact us at info@sweet-apple.co.uk.
+ *
+ * @category   Sweetapple
+ * @package    Sweetapple_Adminlockdownbyip
+ * @author     Clive Sweeting, Sweet-Apple <info@sweet-apple.co.uk>
+ * @copyright  Copyright (c) 2013 Sweet-Apple (http://www.sweet-apple.co.uk)
+ * @license    OSL v3.0
+*/
+-->
+<config>
+    <modules>
+        <Sweetapple_Adminlockdownbyip>
+            <version>0.1.0</version>
+        </Sweetapple_Adminlockdownbyip>
+    </modules>
+    <global>
+        <models>
+            <sweetapple_adminlockdownbyip>
+                <class>Sweetapple_Adminlockdownbyip_Model</class>
+            </sweetapple_adminlockdownbyip>
+            <admin>
+                <rewrite>
+                    <observer>Sweetapple_Adminlockdownbyip_Model_Admin_Observer</observer>
+                </rewrite>
+            </admin>
+        </models>
+        <blocks>
+            <sweetapple_adminlockdownbyip>
+                <class>Sweetapple_Adminlockdownbyip_Block</class>
+            </sweetapple_adminlockdownbyip>
+        </blocks>
+        <helpers>
+            <sweetapple_adminlockdownbyip>
+                <class>Sweetapple_Adminlockdownbyip_Helper</class>
+            </sweetapple_adminlockdownbyip>
+        </helpers>
+        <resources>
+            <sweetapple_adminlockdownbyip_setup>
+                <setup>
+                    <module>Sweetapple_Adminlockdownbyip</module>
+                </setup>
+            </sweetapple_adminlockdownbyip_setup>
+        </resources>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <sweetapple_admin_ip_lockdown>
+                                            <title>Admin IP Address Lockdown</title>
+                                        </sweetapple_admin_ip_lockdown>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>
