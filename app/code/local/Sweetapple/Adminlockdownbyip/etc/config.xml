@@ -16,7 +16,7 @@
 <config>
     <modules>
         <Sweetapple_Adminlockdownbyip>
-            <version>0.1.0</version>
+            <version>1.0.1</version>
         </Sweetapple_Adminlockdownbyip>
     </modules>
     <global>

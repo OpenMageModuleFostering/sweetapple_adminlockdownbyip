@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Sweetapple_Adminlockdownbyip</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/OSL-3.0">OSL v3.0</license>
     <channel>community</channel>
@@ -21,9 +21,9 @@ Please note:&#xD;
 &lt;/ol&gt;</description>
     <notes>Supports Magento CE 1.7.0, 1.7.1 and 1.7.2.</notes>
     <authors><author><name>Sweet-Apple</name><user>Sweet-Apple</user><email>info@sweet-apple.co.uk</email></author></authors>
-    <date>2013-03-09</date>
-    <time>15:02:38</time>
-    <contents><target name="magelocal"><dir name="Sweetapple"><dir name="Adminlockdownbyip"><dir name="Helper"><file name="Data.php" hash="d23d92dd02c8b7c470d2ae08b04d65b3"/></dir><dir name="Model"><dir name="Admin"><file name="Observer.php" hash="126b1777e237de3acebdd86a6c4270f4"/></dir></dir><dir name="etc"><file name="config.xml" hash="a50c1ebf4027b79d9bf03a38e237dc18"/><file name="system.xml" hash="9b1e6f69197ba1aa3371a2ad9159d695"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Sweetapple_Adminlockdownbyip.xml" hash="ca2a62042354fc4b0f2fbbb156534beb"/></dir></target></contents>
+    <date>2013-06-06</date>
+    <time>11:59:21</time>
+    <contents><target name="magelocal"><dir name="Sweetapple"><dir name="Adminlockdownbyip"><dir name="Helper"><file name="Data.php" hash="d23d92dd02c8b7c470d2ae08b04d65b3"/></dir><dir name="Model"><dir name="Admin"><file name="Observer.php" hash="126b1777e237de3acebdd86a6c4270f4"/></dir></dir><dir name="etc"><file name="config.xml" hash="4d48395a713723cbe534200624f4a079"/><file name="system.xml" hash="2df46d72169b437baac8d7257a4d3761"/></dir><file name=".DS_Store" hash="a63de7f1f791f9edbd496f94f11ccbbc"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Sweetapple_Adminlockdownbyip.xml" hash="ca2a62042354fc4b0f2fbbb156534beb"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

@@ -15,9 +15,9 @@
 -->
 <config>
     <tabs>
-        <sweetapple translate="label">
-            <label>Sweet-Apple</label>
-            <sort_order>999999</sort_order>
+        <sweetapple translate="label" module="sweetapple_adminlockdownbyip">
+            <label>Sweetapple</label>
+            <sort_order>500</sort_order>
         </sweetapple>
     </tabs>
     <sections>
@@ -25,7 +25,7 @@
             <label>Admin IP Address Restriction</label>
             <tab>sweetapple</tab>
             <frontend_type>text</frontend_type>
-            <sort_order>1</sort_order>
+            <sort_order>510</sort_order>
             <show_in_default>1</show_in_default>
             <groups>
 
