@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Sweetapple_Adminlockdownbyip",
+    "name": "OpenMageModuleFostering\/Sweetapple_Adminlockdownbyip",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Enables store administrators to restrict access to the Magento Admin backend to one or more IP Addresses.",
     "authors": [
-    {
-        "name": "Sweet-Apple",
-        "email": "info@sweet-apple.co.uk"
-    }
-],
+        {
+            "name": "Sweet-Apple",
+            "email": "info@sweet-apple.co.uk"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
